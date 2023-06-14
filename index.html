@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <marquee behavior="bounce" style="color: #cf0000;"> <b>News Wave welcomes you!</b> Stay informed, stay ahead. Experience news like never before with our
+            groundbreaking app, delivering the latest headlines, personalized content, and real-time updates right at
+            your fingertips Empower yourself with knowledge. Our app delivers news, your way.</marquee>
+
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload">
+                <img src="images/News Wave-1.jpg" class="companyLogo" height="80px" width="100px" alt="">
+            </a>
+
+            <div class="navLinks">
+                <ul class="flex ">
+                    <h4 id="personalize">click to personalize your news-></h4>
+                    <li class="hoverLink nav-item" id="sports" onclick="onNavClick('sports')">Sports</li>
+                    <li class="hoverLink nav-item" id="fashion" onclick="onNavClick('fashion')">Fashion</li>
+                    <li class=" hoverLink nav-item" id="foreign-affairs" onclick="onNavClick('foreign-affairs')">Foreign
+                    <li class=" hoverLink nav-item" id="Technology" onclick="onNavClick('Technology')">Technology
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbar">
+                <input type="text" class="news-input" id="searchText" placeholder="eg: Technology">
+                <button class="search-button" id="search-button">search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+
+    <template id="news-card">
+        <div class="card">
+            <div class="cardHeader">
+                <img src="https://via.placeholder.com/400x200" id="news-image" alt="">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this is the title</h3>
+                <h4 class="news-source" id="news-source">end gadget 1/5/2023</h4>
+                <p class="news-disc" id="news-disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                    dolores?</p>
+            </div>
+        </div>
+
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
